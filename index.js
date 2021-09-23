@@ -8,7 +8,20 @@ const questions = [
   {
     type: 'input',
     name: 'githubUsername',
-    message: 'What is your GitHub username?'
+    message: 'What is your GitHub username?',
+    filter: answer => {
+
+    }
+  },
+  {
+    type: 'input',
+    name: 'title',
+    message: 'What is the title of the project?'
+  },
+  {
+    type: 'input',
+    name: 'description',
+    message: 'Provide a brief description of the application.'
   },
   {
     type: 'input',
@@ -16,7 +29,7 @@ const questions = [
     message: 'What is your email?',
     filter: (answer) => {
       let re = /\w+@\w+.\w+/
-      if (re.test(answer)) return answer 
+      if (re.test(answer)) return answer
       else return null
     }
   },
@@ -26,23 +39,30 @@ const questions = [
     message: 'Which license is this project going to use?',
     choices: ['MIT', 'Apache License 2.0', 'GNU General Public License', 'Creative Commons', 'none']
   },
+  {
+    type: 'input',
+    name: 'fileName',
+    message: 'What is the name of the file?',
+    default: 'README',
+  }
 ];
 
 
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
-  writeFile(fileName, generator(data), () => console.log(`${fileName} generated!`))
+  let content = generator(data)
+  writeFile(fileName + '.md', content, () => console.log(`${fileName} generated!`))
 }
 
 // TODO: Create a function to initialize app
 function init() {
   inquirer
     .prompt(questions)
-    .then(answers => {
-      writeToFile('README.md', answers)
+    .then(({ fileName, ...readMeData }) => {
+      writeToFile(fileName, readMeData)
     })
-      .catch((error) => {
+    .catch((error) => {
       if (error.isTtyError) {
         // Prompt couldn't be rendered in the current environment
       } else {
