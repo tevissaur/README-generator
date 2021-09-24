@@ -3,7 +3,7 @@ const inquirer = require('inquirer')
 const { writeFile } = require('fs')
 const generator = require('./utils/generateMarkdown')
 
-// TODO: Create an array of questions for user input
+// // TODO: Create an array of questions for user input
 const questions = [
   {
     type: 'input',

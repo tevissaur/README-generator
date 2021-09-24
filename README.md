@@ -19,7 +19,7 @@
   ## <a id="contributing"></a> Contributing 
   ### Bug Reports
 
-  - Ensure your issue [has not already been reported][1]. It may already be fixed!
+  - Ensure your issue [has not already been reported]. It may already be fixed!
   - Include the steps you carried out to produce the problem.
   - Include the behavior you observed along with the behavior you expected, and
     why you expected it.
@@ -56,7 +56,7 @@
   be locked to prevent further discussion.
   
   ## <a id="tests"></a> Tests
-
+  Coming soon...
   ## <a id="contact-me"></a> Contact Me
   If you have any questions. You can reach me at [my Github](https://www.github.com/tevissaur) or you can email me at: tevisreilly1@gmail.com.
   

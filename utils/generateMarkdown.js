@@ -118,13 +118,14 @@ function generateMarkdown({ githubUsername, title, link, installation, instructi
   
 
   ## <a id="installation"></a> Installation 
-  Run \`${installation.trim()}\` to install dependencies
+  - Clone to machine
+  - Run \`${installation.trim()}\` to run script.
   ## <a id="usage"></a> Usage
   ${linkSection}
   ${instructions}
   ${contributingSection}
   ## <a id="tests"></a> Tests
-
+  Coming soon...
   ## <a id="contact-me"></a> Contact Me
   If you have any questions. You can reach me at [my Github](https://www.github.com/${githubUsername}) or you can email me at: ${email}.
   
