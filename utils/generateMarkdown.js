@@ -64,9 +64,9 @@ ${renderLicenseBadge(license) + renderLicenseLink(license)}
 function generateMarkdown({ githubUsername, title, link, installation, instructions, description, email, license }) {
 
   let linkSection
-  if (link.trim() === '') linkSection = `[Link to demo](${link})`
+  if (link.trim() === '') linkSection = `### [Link to demo](${link})`
   else linkSection = ''
-  
+
   let x = `# ${title} 
   ${description} 
   ${renderLicenseSection(license)}
@@ -78,16 +78,16 @@ function generateMarkdown({ githubUsername, title, link, installation, instructi
   - [Contact Me](#contact-me)
   
 
-  ### <a id="installation"></a> Installation 
+  ## <a id="installation"></a> Installation 
   Run \`${installation.trim()}\` to install dependencies
-  ### <a id="usage"></a> Usage
+  ## <a id="usage"></a> Usage
   ${linkSection}
   ${instructions}
-  ### <a id="contributing"></a> Contributing 
+  ## <a id="contributing"></a> Contributing 
 
-  ### <a id="tests"></a> Tests
+  ## <a id="tests"></a> Tests
 
-  ### <a id="contact-me"></a> Contact Me
+  ## <a id="contact-me"></a> Contact Me
   If you have any questions. You can reach me at [my Github](https://www.github.com/${githubUsername}) or you can email me at: ${email}.
   
 
