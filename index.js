@@ -8,10 +8,7 @@ const questions = [
   {
     type: 'input',
     name: 'githubUsername',
-    message: 'What is your GitHub username?',
-    filter: answer => {
-
-    }
+    message: 'What is your GitHub username?'
   },
   {
     type: 'input',
@@ -37,7 +34,7 @@ const questions = [
     type: 'rawlist',
     name: 'license',
     message: 'Which license is this project going to use?',
-    choices: ['MIT', 'Apache License 2.0', 'GNU General Public License', 'Creative Commons', 'none']
+    choices: ['MIT License', 'Apache 2.0 License', 'GNU General Public License', 'Creative Commons', 'none']
   },
   {
     type: 'input',
@@ -62,13 +59,7 @@ function init() {
     .then(({ fileName, ...readMeData }) => {
       writeToFile(fileName, readMeData)
     })
-    .catch((error) => {
-      if (error.isTtyError) {
-        // Prompt couldn't be rendered in the current environment
-      } else {
-        // Something else went wrong
-      }
-    });
+    .catch((error) => console.log(error));
 }
 
 // Function call to initialize app
