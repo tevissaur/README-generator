@@ -17,6 +17,21 @@ const questions = [
   },
   {
     type: 'input',
+    name: 'link',
+    message: 'What is the link to the demo?'
+  },
+  {
+    type: 'input',
+    name: 'installation',
+    message: 'What commands need to be run in order to use your application?'
+  },
+  {
+    type: 'editor',
+    name: 'instructions',
+    message: 'Provide some instructions on how to use your application.'
+  },
+  {
+    type: 'input',
     name: 'description',
     message: 'Provide a brief description of the application.'
   },
@@ -49,7 +64,7 @@ const questions = [
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
   let content = generator(data)
-  writeFile(fileName + '.md', content, () => console.log(`${fileName} generated!`))
+  writeFile(fileName.trim() + '.md', content, () => console.log(`${fileName} generated!`))
 }
 
 // TODO: Create a function to initialize app
