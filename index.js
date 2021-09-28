@@ -21,6 +21,12 @@ const questions = [
     message: 'What is the link to the demo?'
   },
   {
+    type: 'checkbox',
+    name: 'technologies',
+    message: 'Which technologies did you use to build this project? Check all that apply.',
+    choices: ['JavaScript', 'CSS', 'HTML', 'NodeJS']
+  },
+  {
     type: 'input',
     name: 'installation',
     message: 'What commands need to be run in order to use your application?'

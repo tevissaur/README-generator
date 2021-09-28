@@ -1,21 +1,24 @@
 # README Generator 
-  This script allows the user to answer prompts given by the computer and have it generate a well formatted README file. 
+      This script allows the user to answer prompts given by the computer and have it generate a well formatted README file.   
   
   ## Table of Contents
+  - [Technologies Used](#tech)
   - [Installation](#installation) 
   - [Usage](#usage) 
   - [Contributing](#contributing) 
   - [Tests](#tests)
   - [Contact Me](#contact-me)
   
-
+  ## <a id="tech"></a> Technologies Used
+  JavaScript,NodeJS
   ## <a id="installation"></a> Installation 
-  Run `node index.js` to install dependencies
+  - Clone to machine
+  - Run `node index.js` to run script.
   ## <a id="usage"></a> Usage
-  
+  [Link to demo](https://tevissaur.github.io/README-generator)
   1. Open the terminal in the location you cloned it to
-2. Run necessary commands
-3. Answer all prompts
+  2. Run necessary commands
+  3. Answer all prompts
   ## <a id="contributing"></a> Contributing 
   ### Bug Reports
 
@@ -38,14 +41,14 @@
   
   - Before creating your pull request, it's usually worth asking if the code
     you're planning on writing will actually be considered for merging. You can
-    do this by [opening an issue][1] and asking. It may also help give the
+    do this by [opening an issue] and asking. It may also help give the
     maintainers context for when the time comes to review your code.
   
-  - Ensure your [commit messages are well-written][2]. This can double as your
+  - Ensure your [commit messages are well-written]. This can double as your
     pull request message, so it pays to take the time to write a clear message.
   
   - Add tests for your feature. You should be able to look at other tests for
-    examples. If you're unsure, don't hesitate to [open an issue][1] and ask!
+    examples. If you're unsure, don't hesitate to [open an issue] and ask!
   
   - Submit your pull request!
   
@@ -58,7 +61,7 @@
   ## <a id="tests"></a> Tests
   Coming soon...
   ## <a id="contact-me"></a> Contact Me
-  If you have any questions. You can reach me at [my Github](https://www.github.com/tevissaur) or you can email me at: tevisreilly1@gmail.com.
+  If you have any questions. You can reach me at [my Github](https://www.github.com/tevissaur) or you can email me at: null.
   
 
  

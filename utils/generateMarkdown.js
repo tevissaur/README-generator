@@ -61,7 +61,7 @@ ${renderLicenseBadge(license) + renderLicenseLink(license)}
 }
 
 // TODO: Create a function to generate markdown for README
-function generateMarkdown({ githubUsername, title, link, installation, instructions, description, email, license }) {
+function generateMarkdown({ githubUsername, title, link, technologies, installation, instructions, description, email, license }) {
   let contributingSection = `## <a id="contributing"></a> Contributing 
   ### Bug Reports
 
@@ -110,13 +110,15 @@ function generateMarkdown({ githubUsername, title, link, installation, instructi
   ${description} 
   ${renderLicenseSection(license)}
   ## Table of Contents
+  - [Technologies Used](#tech)
   - [Installation](#installation) 
   - [Usage](#usage) 
   - [Contributing](#contributing) 
   - [Tests](#tests)
   - [Contact Me](#contact-me)
   
-
+  ## <a id="tech"></a> Technologies Used
+  ${technologies}
   ## <a id="installation"></a> Installation 
   - Clone to machine
   - Run \`${installation.trim()}\` to run script.
