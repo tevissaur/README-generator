@@ -102,13 +102,23 @@ function generateMarkdown({ githubUsername, title, link, technologies, installat
   be locked to prevent further discussion.
   `
 
-  let linkSection
-  if (link.trim() === '') linkSection = `[Link to demo](${link})`
-  else linkSection = ''
+  let linkSection = () => {
+    if (link.trim() === '') return linkSection = `[Link to demo](${link})`
+    else return linkSection = ''
 
+  }
+
+  let techSection = () => {
+    let text = ``
+    console.log(technologies)
+    for (let tech of technologies) {
+      text += `  - ${tech}\n`
+    }
+    return text
+  }
   let x = `# ${title} 
-  ${description} 
-  ${renderLicenseSection(license)}
+${description} 
+${renderLicenseSection(license)}
   ## Table of Contents
   - [Technologies Used](#tech)
   - [Installation](#installation) 
@@ -118,14 +128,14 @@ function generateMarkdown({ githubUsername, title, link, technologies, installat
   - [Contact Me](#contact-me)
   
   ## <a id="tech"></a> Technologies Used
-  ${technologies}
+${techSection()}
   ## <a id="installation"></a> Installation 
   - Clone to machine
   - Run \`${installation.trim()}\` to run script.
   ## <a id="usage"></a> Usage
-  ${linkSection}
-  ${instructions}
-  ${contributingSection}
+${linkSection()}
+${instructions}
+${contributingSection}
   ## <a id="tests"></a> Tests
   Coming soon...
   ## <a id="contact-me"></a> Contact Me

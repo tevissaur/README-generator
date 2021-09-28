@@ -1,6 +1,6 @@
 # README Generator 
-      This script allows the user to answer prompts given by the computer and have it generate a well formatted README file.   
-  
+This script allows the user to answer prompts given by the computer and have it generate a well formatted README file.    
+
   ## Table of Contents
   - [Technologies Used](#tech)
   - [Installation](#installation) 
@@ -10,16 +10,17 @@
   - [Contact Me](#contact-me)
   
   ## <a id="tech"></a> Technologies Used
-  JavaScript,NodeJS
+  - JavaScript
+  - NodeJS
+
   ## <a id="installation"></a> Installation 
   - Clone to machine
   - Run `node index.js` to run script.
   ## <a id="usage"></a> Usage
-  [Link to demo](https://tevissaur.github.io/README-generator)
   1. Open the terminal in the location you cloned it to
   2. Run necessary commands
   3. Answer all prompts
-  ## <a id="contributing"></a> Contributing 
+## <a id="contributing"></a> Contributing 
   ### Bug Reports
 
   - Ensure your issue [has not already been reported]. It may already be fixed!
@@ -61,7 +62,7 @@
   ## <a id="tests"></a> Tests
   Coming soon...
   ## <a id="contact-me"></a> Contact Me
-  If you have any questions. You can reach me at [my Github](https://www.github.com/tevissaur) or you can email me at: null.
+  If you have any questions. You can reach me at [my Github](https://www.github.com/tevissaur) or you can email me at: tevisreilly1@gmail.com.
   
 
  
