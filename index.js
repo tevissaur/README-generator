@@ -24,7 +24,7 @@ const questions = [
     type: 'checkbox',
     name: 'technologies',
     message: 'Which technologies did you use to build this project? Check all that apply.',
-    choices: ['JavaScript', 'CSS', 'HTML', 'NodeJS']
+    choices: ['JavaScript', 'CSS', 'HTML', 'NodeJS', 'Express.js', 'Jest']
   },
   {
     type: 'input',
@@ -70,7 +70,7 @@ const questions = [
 // // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
   let content = generator(data)
-  writeFile(fileName.trim() + '.md', content, () => console.log(`${fileName} generated!`))
+  writeFile(`./dist/${fileName.trim()}.md`, content, () => console.log(`${fileName.trim()} generated!`))
 }
 
 // // TODO: Create a function to initialize app
